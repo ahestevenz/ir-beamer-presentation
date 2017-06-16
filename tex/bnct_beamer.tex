@@ -24,7 +24,8 @@
 \date{15/06/2017}
 
 \title[Registración de imágenes]{Registración de imágenes médicas en 2D}
-\author[Ariel Hernández]{\small Ariel Hernández}
+\author[Ariel Hernández]{\small Ariel Hernández\\
+\footnotesize ariel.h.estevenz@ieee.org}
 \institute[]{\large CNEA\\
 \footnotesize División Sistemas Digitales y Robótica\\
 \small Subgerencia de Instrumentación y Control}
@@ -47,7 +48,7 @@
 \titlepage
 
 \begin{tabular}{l}
-  \includegraphics[width=3.5cm]{images/logos/CNEA_logo.png}
+  \href{http://www.cnea.gov.ar/}{\includegraphics[width=2.8cm]{images/logos/CNEA_logo.png}}
 \end{tabular}
 
 \end{frame}
@@ -61,17 +62,17 @@ ARPET: Tomógrafo por emisión de positrones
 
   \begin{tabular}{cl}
      \begin{tabular}{c}
-       \includegraphics[height=5cm, width=3.5cm]{images/7-reg.eps}
+       \includegraphics[width=4.5cm]{images/ARPET.jpg}
      \end{tabular}
    & \begin{tabular}{l}
-       \parbox{0.5\linewidth}{
+       \parbox{0.45\linewidth}{
         \begin{itemize}
         \pause
         \item Equipo desarrollado en el país
         \pause
         \item Para la detección utiliza seis cámaras gamma
         \pause
-        \item Cada cámara contiene un cristal continuo Yoduro de Sodio (NaI)
+        \item Cada cámara contiene un cristal continuo de Yoduro de Sodio (NaI) y 48 PMTs
         \pause
         \item No tiene CT
         \end{itemize}
@@ -186,7 +187,7 @@ Mecanismo de cuantificación de las diferencias geométricas entre ambas imágen
 % Frame 9
 \begin{frame}
 \frametitle{IR: Insight Journal Database}
-\includegraphics[height=6cm, width=12cm]{images/IJD.png}
+\href{http://www.insight-journal.org/}{\includegraphics[height=6cm, width=12cm]{images/IJD.png}}
 \end{frame}
 
 % Frame 10
@@ -194,6 +195,8 @@ Mecanismo de cuantificación de las diferencias geométricas entre ambas imágen
 \frametitle{IR: Registración en ARPET}
 
 Algoritmo de registración de imágenes 2D
+
+\href{https://github.com/ahestevenz/ip-image-registration}{Link en GitHub}
 
 \begin{itemize}
 \pause
@@ -208,7 +211,7 @@ Algoritmo de registración de imágenes 2D
 
 \pause
 \begin{block}{}
-  Se realiza una transformación de traslación de a 1 pixel hasta completar el tamaño de la imagen y medio grado en la rotación de $-\pi/2$ a $\pi/2$, donde se obtiene una matriz de MI de tamaño 512x512x181, ya que son 512x512 traslaciones por cada rotación.
+  Se realiza una transformación de traslación de a 1 pixel hasta completar el tamaño de la imagen y medio grado en la rotación de $-\pi/4$ a $\pi/4$, donde se obtiene una matriz de MI de tamaño 512x512x181, ya que son 512x512 traslaciones por cada rotación.
 \end{block}
 
 \end{frame}
@@ -237,6 +240,8 @@ Algoritmo de registración de imágenes 2D
 \frametitle{IR: Registración en ARPET}
 
 Algoritmo de registración de imágenes 2D
+
+\href{https://github.com/ahestevenz/ip-image-registration}{Link en GitHub}
 
 \begin{itemize}
 \pause
@@ -299,6 +304,8 @@ Algoritmo de registración de imágenes 2D
 \begin{frame}
 \frametitle{IR: Registración en BNCT}
 
+\href{https://github.com/ahestevenz/ip-image-registration}{Link en GitHub}
+
 \begin{figure}
   \includegraphics[width=\textwidth]{images/IPTBNCTRegister.png}
 \end{figure}
@@ -313,15 +320,15 @@ Algoritmo de registración de imágenes 2D
 \column{.5\textwidth}
 \pause
 \centering
-\includegraphics[width=5cm]{images/logos/elastix.png}\\
+\href{http://elastix.isi.uu.nl/}{\includegraphics[width=5cm]{images/logos/elastix.png}}\\
 \pause
-\includegraphics[width=5cm]{images/logos/itkLogo.jpg}
+\href{https://itk.org/}{\includegraphics[width=5cm]{images/logos/itkLogo.jpg}}
 \column{.5\textwidth}
 \pause
 \centering
-\includegraphics[width=6cm]{images/logos/opencv.png}\\
+\href{http://opencv.org/}{\includegraphics[width=6cm]{images/logos/opencv.png}}\\
 \pause
-\includegraphics[width=6cm]{images/logos/simpleitk.png}
+\href{http://www.simpleitk.org/}{\includegraphics[width=6cm]{images/logos/simpleitk.png}}
 \end{columns}
 
 \end{frame}
@@ -330,7 +337,7 @@ Algoritmo de registración de imágenes 2D
 \begin{frame}
 \frametitle{IR: Software}
 
-\hfil\hfil\includegraphics[width=7cm]{images/logos/SimpleElastix.png}\newline
+\hfil\hfil\href{https://simpleelastix.github.io/}{\includegraphics[width=7cm]{images/logos/SimpleElastix.png}}\newline
   \null\hfil\hfil\makebox[5cm]{}\newline
   \pause
   \vfil
